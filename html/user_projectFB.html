@@ -1,0 +1,480 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Access-Control-Allow-Origin" content="*">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=8"/>
+<title>用户中心-微工程</title>
+<meta name="description" content="微工程，微工程APP，装修、材料、家具、饰品一站式服务，让装修更简单，价格更透明！！" />
+<meta name="keywords" content="微工程，微工程，家居商城，微工程家居商城，微工程家居装修商城，办公室装修，写字楼装修，材料，装修材料，家居，办公家具，家居，家具，装修，装饰" />
+<link rel="stylesheet" type="text/css" href="/themes/mall/jiaju/css/api.css"/>
+<link type="text/css" href="/themes/mall/jiaju/styles/default/css/center.css" rel="stylesheet"  />
+<link rel="stylesheet" type="text/css" href="/themes/mall/jiaju/css/aui.1.0.css"/>
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<!-- <script type="text/javascript" src="www.wgc2013.com/themes/mall/jiaju/js/jquery-1.8.3.min.js"></script> -->
+<script type="text/javascript">
+	jQuery.support.cors = true;
+</script>
+<style>
+	.upload_input{
+	  display: block;
+	  width: 85px;
+	  height: 25px;
+	  line-height: 12px;
+	  position: relative;
+	  left: 40px;
+	  z-index: 999;
+	  -webkit-opacity: 0.0;  
+	  /* Netscape and Older than Firefox 0.9 */  
+	  -moz-opacity: 0.0;  
+	  /* Safari 1.x (pre WebKit!) 老式khtml内核的Safari浏览器*/  
+	  -khtml-opacity: 0.0;  
+	  /* IE9 + etc...modern browsers */  
+	  opacity: .0;  
+	  /* IE 4-9 */  
+	  filter:alpha(opacity=0);  
+	  /*This works in IE 8 & 9 too*/  
+	  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";  
+	  /*IE4-IE9*/  
+	  filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0); 
+}
+	.list_show ul li{
+		font-size:14px;
+		color:#000;
+}
+	.list_show p{
+		font-size:14px;
+		color:#000;
+}
+
+
+</style>
+</head>
+
+<body style="background:#fff;">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- <base href="http://www.wgc2013.com/" /> -->
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7 charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link type="text/css" href="themes/mall/jiaju/styles/default/css/main.css" rel="stylesheet"  />
+<link type="text/css" href="themes/mall/jiaju/styles/css/global.css" rel="stylesheet"  />
+<link type="text/css" href="http://www.wgc2013.com/themes/mall/jiaju/styles/default/css/catalog.css" rel="stylesheet"  />
+<link type="text/css" href="http://www.wgc2013.com/themes/mall/jiaju/styles/default/css/footer.css" rel="stylesheet" />
+<link type="text/css" href="themes/mall/jiaju/styles/css/style.css" rel="stylesheet"  />
+<script type="text/javascript" src="index.php?act=jslang"></script>
+<script type="text/javascript" src="http://www.wgc2013.com/includes/libraries/javascript/ecmall.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://www.wgc2013.com/includes/libraries/javascript/cart.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://www.wgc2013.com/themes/mall/jiaju/styles/default/js/main.js" charset="utf-8"></script>
+
+<!--[if lte IE 6]>
+<script type="text/javascript" language="Javascript" src="http://www.wgc2013.com/themes/mall/jiaju/styles/default/js/hoverForIE6.js"></script>
+<![endif]-->
+<!--[if IE 8]>
+<link type="text/css" href="themes/mall/jiaju/css/ie8.css" rel="stylesheet"  />
+<![endif]-->
+<script type="text/javascript">
+var SITE_URL = "http://www.wgc2013.com";
+var PRICE_FORMAT = '&yen;%s';
+</script>
+<script charset="utf-8" type="text/javascript" src="http://www.wgc2013.com/includes/libraries/javascript/jquery.plugins/jquery.validate.js" ></script><style type="text/css">
+body{background:url('') no-repeat center top }
+.mainnav{width:990px; overflow:hidden; margin:0 auto}
+.STYLE1 {color: red}
+</style>
+<script type="text/javascript" src="http://www.wgc2013.com/themes/mall/jiaju/styles/default/js/hover.js"></script>
+
+<script charset="utf-8" type="text/javascript" src="http://www.wgc2013.com/includes/libraries/javascript/jquery.plugins/jquery.validate.js" ></script>
+<script type="text/javascript">
+  $(function (){
+    $('#open-change-city-window').click(function (){
+      $('.change-city-window').slideDown();
+      
+    })
+    $('#close-change-city-window').click(function (){
+      $('.change-city-window').slideUp();
+    })
+
+  
+  })
+</script>
+</head>
+<body>
+{include file=header.html}
+
+<!-- 中部主要内容 -->
+ <div class="container" style="overflow: hidden;width: 1200px;margin: 10px auto;">
+ <!-- 左上的导航栏 -->
+ {include file=companycenter.html}
+
+
+ 	<!-- 右边的内容 -->
+ 	<div class="container_right" style="width: 80%;border: 1px solid #cacaca;float: right;background-color: #f7f7f7;padding: 0 10px 10px 10px;">
+ 		<!-- 消息中心 -->
+
+		<!-- 积分 -->
+
+		<!-- 发布招聘 -->
+
+		<!-- 发布集采 -->
+				<div class="user_collection base_ui_public" style="/*display: none;*/">
+			<ul class="user_collection_ul user_public_ul">
+ 				<li class="change_bg_li" style="margin-right: 10px;">项目分包</li>
+				<li style="margin-right: 10px;">分包列表</li>
+ 			</ul>
+ 			<div class="user_collection_info base_info_public" style="overflow: hidden;padding-left: 15%;">
+				        
+						<input type="hidden" id="tell" />
+ 				<ul style="margin-top: 30px;">
+ 					<li>
+						<div class="user_collection_name user_public_name" style="color: #5e5a59;">联系人：</div>
+						<div class="user_collection_input user_public_input"><input id="name" type="text" readonly="readonly"/></div>
+					</li>
+					<li>
+						<div class="user_collection_name user_public_name" style="color: #5e5a59;">发布时间：</div>
+						<div class="user_collection_input user_public_input"><input id="shijian" type="text" /></div>
+					</li>
+					<li>
+						<div class="user_collection_name user_public_name" style="color: #5e5a59;">发布地址：</div>
+						<div class="user_collection_input user_public_input"><input id="fabudizhi" type="text" /></div>
+					</li>
+					<li>
+						<div class="user_collection_name user_public_name" style="color: #5e5a59;">装修地址：</div>
+						<div class="user_collection_input user_public_input"><input type="text" id="worker_address"/></div>
+					</li>
+					<li>
+						<div class="user_collection_name user_public_name" style="color: #5e5a59;">装修预算：</div>
+						<div class="user_collection_input user_public_input"><input id="expect_price" type="text" /></div>
+					</li>
+					<li>
+						<div class="user_collection_name user_public_name" style="color: #5e5a59;">装修时长：</div>
+						<div class="user_collection_input user_public_input"><input id="time" type="text" /></div>
+					</li>	
+					<li>
+						<div class="user_collection_name user_public_name" style="color: #5e5a59;">预约时间：</div>
+						<div class="user_collection_input user_public_input"><input id="dd_time" type="text" /></div>
+					</li>	
+					<li>
+						<div class="user_collection_name user_public_name" style="color: #5e5a59;">装修大小：</div>
+						<div class="user_collection_input user_public_input"><input id="area" type="text" /></div>
+					</li>	
+					
+					
+					<li style="height: 160px;">
+						<div class="user_collection_name user_public_name" style="color: #5e5a59;">内容描述：</div>
+						<div style="display: inline-block;width: 260px;height:150px;border:1px solid #c1c1be;position: relative;">
+							<textarea style="width:100%;height:100%;" id="content">
+							
+							</textarea>
+						</div>
+					</li>
+					
+ 				</ul>
+ 				<div class="user_collection_send">
+
+ 				<a href="javascript:;" style="position: relative;left: -210px;">保存</a>
+
+				<a href="javascript:;" style="position: relative;left: -150px;" onclick="fabu()">立即发布</a>
+ 				</div>
+ 			</div>
+			
+			<!--集采列表 -->
+			
+			<div class="user_collection_list base_info_public" style="overflow: hidden;display:none;">
+						<div class="search_ys">
+							<input type="text" style="width: 400px;height: 30px;" id="search_fc" placeholder="请输入关键词例：地砖">
+							<label for="search_fc" style="width: 50px;height: 30px;display:inline-block;position: relative;top: -8px;"><img src="/themes/mall/jiaju/images/search_button.jpg" alt="" style="width: 100%;height: 100%;"></label>
+						</div>
+				<div class="list_show" style="overflow: hidden;min-height:300px;">
+				<!-- <div class="list_index">
+				 <div style="text-align:right;padding-right: 20px;"><input type="checkbox"></div>
+				 
+					<div class="list_right" style="float: left;width: 50%;">
+
+						<ul style="margin-left:15%;">
+							<li>联系人：大雄</li>
+							<li style="margin:10px 0;">发布地址：广东省广州市白云区黄边南路一街</li>
+							<li>装修预算：80万</li>
+							<li style="margin:10px 0;">预约时间：2018年10月1日</li>
+							
+						</ul>
+					</div>
+					<div class="list_left" style="float: right;width: 50%;">
+						<ul style="margin-left:15%;">
+							<li>发布时间：卡娜卡石瓷砖</li>
+							<li style="margin:10px 0;">装修地址：为花广场</li>
+							<li>装修时长：1个月</li>
+							<li style="margin:10px 0;">装修大小：500m²</li>							
+						</ul>
+					</div>
+					<p class="clearfix" style="padding-left:15px;">内容描述：办公室放假啊时间飞快啊就发了卡时间付款啦睡觉开了房间阿斯科利放假撒开了房间啊水库里卡思乐放假啊快乐巨斧洛克</p>
+					<div style="width:100%;height:40px;float:left;margin-top:30px;"><img src="/themes/mall/jiaju/images/list_bg.jpg" style="width:100%;height:100%;"/></div>
+					</div>
+					-->
+				</div>							
+ 			</div>
+			<!--集采列表end -->
+		</div>
+		<!-- 发布列表 -->
+
+ 		<!-- 创建简历 -->
+
+ 		<!-- 实名认证 -->
+
+ 		</div>
+ 		
+ 	</div>
+
+
+
+
+
+{include file=footer.html}
+<script type="text/javascript">
+
+$().ready(function(){
+	username();
+	list();
+})
+	//点击预算列表切换
+	  $(".user_collection_ul li:first").click(function(){
+    	
+    	$(this).addClass("change_bg_li")
+    	$(".user_collection_ul li:last").removeClass("change_bg_li")
+    	$(".user_collection_info").show();
+    	$(".user_collection_list").hide();
+    })
+
+    $(".user_collection_ul li:last").click(function(){
+    	
+    	$(this).addClass("change_bg_li")
+    	$(".user_collection_ul li:first").removeClass("change_bg_li")
+    	$(".user_collection_info").hide();
+    	$(".user_collection_list").show();
+    })
+
+
+
+	$(".container_nav ul li").click(function(){
+		$(".container_nav ul li").removeClass("bg_li")
+		$(this).addClass("bg_li")
+	})
+
+	// 图片上传
+	var clickImg = function(obj){
+	    $(obj).parent().find('.upload_input').click();
+	    hidden();
+	  }
+	function change(file) {
+	      //预览
+	      var pic = $(file).parent().find(".preview");
+
+
+	      var ext=file.value.substring(file.value.lastIndexOf(".")+1).toLowerCase();
+
+	       // gif在IE浏览器暂时无法显示
+	       if(ext!='png'&&ext!='jpg'&&ext!='jpeg'){
+	          if (ext != '') {
+	            alert("图片的格式必须为png或者jpg或者jpeg格式！"); 
+	          } 
+	           return;
+	       }
+	       //判断IE版本
+	       var isIE = navigator.userAgent.match(/MSIE/)!= null,
+	           isIE6 = navigator.userAgent.match(/MSIE 6.0/)!= null;
+	           isIE10 = navigator.userAgent.match(/MSIE 10.0/)!= null;
+	       if(isIE && !isIE10) {
+	          file.select();
+	          var reallocalpath = document.selection.createRange().text;
+	           // IE6浏览器设置img的src为本地路径可以直接显示图片
+	           if (isIE6) {
+	              pic.attr("src",reallocalpath);
+	           }else{
+	              // 非IE6版本的IE由于安全问题直接设置img的src无法显示本地图片，但是可以通过滤镜来实现             
+	              pic.css("filter","progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale',src=\"" + reallocalpath + "\")");
+	              // 设置img的src为base64编码的透明图片 取消显示浏览器默认图片
+	              pic.attr('src','data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');             
+	           }
+
+	           hidden();
+	       }else {
+	          html5Reader(file,pic);
+	          hidden();
+	       }
+	  }
+	function html5Reader(file,pic){
+	     var file = file.files[0];
+	     var reader = new FileReader();
+	     reader.readAsDataURL(file);
+	     reader.onload = function(e){
+	         pic.attr("src",this.result);
+	     }
+	}
+
+	//隐藏添加图片的按钮
+	function hidden(){
+		if($('#preview').attr('src')){
+       		$('.hs').css({
+       			display: 'none'
+       		});
+        }
+	}
+
+	$(document).ready(function() {
+
+	});
+
+//获取当前人的姓名
+	function username(){
+		var url = 'http://wgcapp.wgc2013.com/jingyi.php/Home/Jifen/user_ziliao';
+		$.post(url,{
+			uid:'<?php echo $_SESSION["user_info"]["user_id"];?>',
+		},function(ret){
+		if(ret.code == 200){
+			//console.log(ret.user.name)
+			$("#name").val(ret.user.name);
+			$("#tell").val(ret.user.mobile)
+		}
+			
+		},'json')
+	}
+	
+		
+	//发布项目分包
+	//var worker_address = '广东';
+	var region = '广东';
+	var s_province,s_city,s_county
+	function fabu(){
+		var name            = $("#name").val();
+		var address         = $("#xiangxi").val();//定位地址
+		var worker_address  = $("#worker_address").val();//装修地址
+		var tell            = $("#tell").val();//联系电话
+		var dd_time         = $('#dd_time').val();//预约时间
+		var expect_price    = $("#expect_price").val();//装修预算
+		var time            = $("#time").val();//装修时间
+		var area            = $("#area").val();//装修面积
+		var content         = $('#content').val();//装修内容
+		var region          = region;//显示区域
+
+
+		if(address == ''){
+			alert('地址必填项!');
+			return false;
+		}else if(worker_address == ''){
+			alert('装修地址必须填')
+			return false;
+		}else if(dd_time == ''){
+			alert('预约时间必须填')
+			return false;
+		}else if(expect_price == ''){
+			alert('装修预算必须填')
+			return false;
+		}else if(time == ''){
+			alert('装修时间必须填')
+			return false;
+		}else if(area == ''){
+			alert('装修面积必须填')
+			return false;
+		}else if(content == ''){
+			alert('请简单说明装修内容0.0')
+			return false;
+		}
+
+		$.post('http://wgcapp.wgc2013.com/index.php/Home/Workdecoration/workdecorationAdd', {
+			user_id 	   : '<?php echo $_SESSION["user_info"]["user_id"];?>',
+								lianxiren      : name,
+						        autoaddress    : address, 
+						        s_province     : s_province,
+								s_city         : s_city,
+								s_county       : s_county,
+								region         : region,
+						        address  	   : worker_address,
+							    tel    		   : tell,
+							    budget    	   : expect_price,
+							    jobtime   	   : time,
+							    jobsize   	   : area,
+							    fortime        : dd_time,
+							    content   	   : content,
+							    hasmoney       : 10,
+							    publishingarea : $("#Publishingarea").val()
+		}, function(ret) {
+		//console.log(ret);
+			if(ret.code == 200){
+				alert('发布材料成功!');
+				window.location.reload();
+			}else if(ret.code == 202){
+				alert('发布材料失败!');
+				return false;
+			}else if(ret.status == 205){
+				alert('您的积分余额不足,请充值或开通会员特权！');
+				return false;
+			}else{
+				alert('网络连接失败，请检查网络!');
+			}
+		},'json');
+	}
+	
+	//分包列表
+	var page = 1;
+	function list(){
+		var url = 'http://wgcapp.wgc2013.com/index.php/Home/Workdecoration/getList';
+		var myid = '<?php echo $_SESSION["user_info"]["user_id"];?>';
+		$.post(url,{
+			user_id:'<?php echo $_SESSION["user_info"]["user_id"];?>',
+			page   :page
+		},function(ret){
+			console.log(ret);
+			var listHtml = '';
+			if(ret.code == 200){
+				var data = ret.message;
+				for(var i in data){
+					var 	lianxiren = data[i].lianxiren;
+					var		content = data[i].content;//内容描述
+					var		id = data[i].id;
+					var		send_uid = data[i].user_id;
+					var		address = data[i].address;//装修地址
+					var		tel = data[i].tel;//联系人电话
+					var		jobtime = data[i].jobtime; //装修时长
+					var		jobsize = data[i].jobsize; //装修大小
+					var		addtime = data[i].addtime; //发布时间
+					var		budget = data[i].budget; //装修预算
+					var		fortime = data[i].fortime;//预约时间
+					
+					if(send_uid == myid ){
+						console.log('hello')
+						listHtml +=	'<div class="list_index">';
+						listHtml +=	'<div style="text-align:right;padding-right: 20px;"><input type="checkbox"></div>';
+						listHtml +=	'<div class="list_right" style="float: left;width: 50%;">';
+						listHtml +=	'<ul style="margin-left:15%;">';
+						listHtml +=	'<li>联系人：'+lianxiren+'</li>';
+						listHtml +=	'<li style="margin:10px 0;">发布地址：'+data[i].autoaddress+'</li>';
+						listHtml +=	'<li>装修预算：'+budget+'</li>';
+						listHtml +=	'<li style="margin:10px 0;">预约时间：'+fortime+'</li>';					
+						listHtml +=	'</ul>';
+						listHtml +=	'</div>';
+						listHtml +=	'<div class="list_left" style="float: right;width: 50%;">';
+						listHtml +=	'<ul style="margin-left:15%;">';
+						listHtml +=	'<li>发布时间：'+addtime+'</li>';
+						listHtml +=	'<li style="margin:10px 0;">装修地址：'+address+'</li>';
+						listHtml +=	'<li>装修时长：'+jobtime+'</li>';
+						listHtml +=	'<li style="margin:10px 0;">装修大小：'+jobsize+'</li>';						
+						listHtml +=	'</ul>';
+						listHtml +=	'</div>';
+						listHtml +=	'<p style="padding-left:70px;">内容描述：'+content+'</p>';
+						listHtml +=	'<div style="width:100%;height:40px;float:left;margin-top:30px;"><img src="/themes/mall/jiaju/images/list_bg.jpg" style="width:100%;height:100%;"/></div>';
+						listHtml += '</div>';
+						
+					
+						
+					}
+				}
+					$(".list_show").append(listHtml);
+			}
+		},'json')
+		
+	}
+</script>
+</body>
+</html>
